@@ -117,3 +117,22 @@ hr {
   color: #ff4a60;
   margin-right: 4.5px;
 }
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .player,
+  .blog {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
