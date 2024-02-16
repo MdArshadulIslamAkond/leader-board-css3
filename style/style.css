@@ -193,7 +193,7 @@ hr {
   .header {
     width: 100%;
     margin-left: 0;
-    margin-right: 0;
+    /* margin-right: 0; */
   }
   .container {
     width: 100%;
@@ -206,6 +206,6 @@ hr {
 /* ipad pro Devices */
 @media only screen and (min-width: 993px) and (max-width: 1296px) {
   .header {
-    margin-left: 35px;
+    margin-left: 0;
   }
 }
