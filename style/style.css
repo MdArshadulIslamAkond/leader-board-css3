@@ -16,7 +16,6 @@ main {
   background-color: #ffffff;
   width: 870px;
   border-radius: 5px;
-  /* height: 679px; */
   padding: 33px;
   margin-top: 21px;
 }
@@ -24,15 +23,14 @@ main {
 
 header {
   background-color: #562eff;
-  height: 94px;
+  /* height: 94px; */
 }
 .header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* justify-content: space-between; */
-  justify-items: center;
-  width: 870px;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 936px;
+  margin-left: 200px;
 }
 .header-idea {
   display: flex;
@@ -50,6 +48,7 @@ header {
 }
 .navigation-bar {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 23px;
   margin-bottom: 20px;
@@ -168,6 +167,11 @@ hr {
 
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
+  .header {
+    width: 100%;
+    margin-left: 0px;
+    flex-direction: column;
+  }
   .container {
     width: 100%;
   }
@@ -186,11 +190,22 @@ hr {
 }
 /* Tablet devices */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
   .container {
     width: 100%;
   }
   .players,
   .courses {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ipad pro Devices */
+@media only screen and (min-width: 993px) and (max-width: 1296px) {
+  .header {
+    margin-left: 35px;
   }
 }
